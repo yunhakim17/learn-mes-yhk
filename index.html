@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>스마트팩토리 MES 실습 결과</title>
+<style>
+:root{--navy:#1B2C5E;--amber:#C77700;--muted:#6B7280;--line:#D6D6DB;--tint:#EAF1FB}
+*{box-sizing:border-box} body{margin:0;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#3B4252;background:#fff}
+header{background:var(--navy);color:#fff;padding:28px 16px} header h1{margin:0 0 6px;font-size:1.6rem} header p{margin:0;color:#CADCFC}
+main{max-width:960px;margin:0 auto;padding:16px} h2{color:var(--navy);font-size:1.2rem;border-bottom:2px solid var(--amber);padding-bottom:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--tint);padding:14px;border-radius:6px} .card b{display:block;font-size:1.7rem;color:var(--navy)} .card span{color:var(--muted);font-size:.9rem}
+img{max-width:100%;height:auto} table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:6px;text-align:center} thead th{background:var(--navy);color:#fff}
+.note{color:var(--muted);font-size:.9rem} a{color:var(--navy)}
+</style></head><body>
+<header><h1>스마트팩토리 MES — 실습 결과</h1>
+<p>MES는 Level 3에서 납기와 품질 신호를 잇고, OEE 85.4%로 세 데이터를 묶고, 품질 신호를 먼저 본다.</p></header>
+<main>
+<h2>1장 MES 데이터 지도</h2>
+<div class="cards">
+<div class="card"><b>5층</b><span>ISA-95 계층 수 [S1][S2]</span></div>
+<div class="card"><b>Level 3</b><span>MES의 위치 [S1][S2]</span></div>
+<div class="card"><b>11개</b><span>MESA-11 핵심 기능 [S2][S11]</span></div>
+</div>
+<h2>2장 데이터 연결 — OEE</h2>
+<div class="cards">
+<div class="card"><b>85.4%</b><span>가용률 90 × 성능 95 × 품질 99.9 [S7][S8]</span></div>
+<div class="card"><b>84.6%</b><span>품질만 99%일 때 — 85%에 못 미침 [S7]</span></div>
+</div>
+<p><img src="out/ch2_oee.png" alt="월드클래스 OEE 구성 막대 차트"></p>
+<h2>3장 먼저 보는 신호 — 도입 성과</h2>
+<table><thead><tr><th>조사</th><th>품질</th><th>생산성</th><th>원가</th><th>납기</th></tr></thead><tbody>
+<tr><th>경남 439곳 (2022~2023 도입) [S13]</th><td>+44.3%</td><td>+22.8%</td><td>-32.5%</td><td>+17.0%</td></tr>
+<tr><th>전국 참여 기업 (2014~2018) [S15]</th><td>+42.5%</td><td>+28.5%</td><td>-15.5%</td><td>—</td></tr>
+</tbody></table>
+<p>두 조사 모두 개선 폭이 가장 큰 지표는 <b>품질</b>(44.3% · 42.5%)이다. 대상·시기가 달라 숫자끼리 비교하지 않고 방향만 읽는다.</p>
+<h2>교재와 출처</h2>
+<p><a href="docs/Smart_Factory_MES_Textbook.pdf">교재 PDF</a> · <a href="docs/Smart_Factory_MES_Deck.pdf">강의 덱 PDF</a></p>
+<p class="note">숫자는 모두 공개 자료에서 뽑은 facts.csv 값이다(가상 데이터 없음). 출처 번호 [S1]~[S16]의 목록은 교재 부록에 있다.
+부품사 실제 MES 로그와 도입 후 불량률·리드타임 수치는 공개 자료를 찾지 못했다(미확보).</p>
+</main></body></html>

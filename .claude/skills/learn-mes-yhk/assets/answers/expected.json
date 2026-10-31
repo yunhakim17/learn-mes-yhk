@@ -1,0 +1,69 @@
+{
+ "values": {
+  "facts_rows": {
+   "value": 24,
+   "decimals": 0,
+   "block": 0
+  },
+  "cross_checked": {
+   "value": 13,
+   "decimals": 0,
+   "block": 0
+  },
+  "single_source": {
+   "value": 8,
+   "decimals": 0,
+   "block": 0
+  },
+  "not_found": {
+   "value": 3,
+   "decimals": 0,
+   "block": 0
+  },
+  "layers": {
+   "value": 5,
+   "decimals": 0,
+   "block": 1
+  },
+  "mes_level": {
+   "value": 3,
+   "decimals": 0,
+   "block": 1
+  },
+  "mesa_functions": {
+   "value": 11,
+   "decimals": 0,
+   "block": 1
+  },
+  "oee_world_class": {
+   "value": 85.4,
+   "decimals": 1,
+   "block": 2
+  },
+  "oee_quality99": {
+   "value": 84.6,
+   "decimals": 1,
+   "block": 2
+  },
+  "gyeongnam_top": {
+   "value": "품질",
+   "decimals": null,
+   "block": 3
+  },
+  "gyeongnam_top_value": {
+   "value": 44.3,
+   "decimals": 1,
+   "block": 3
+  },
+  "national_top": {
+   "value": "품질",
+   "decimals": null,
+   "block": 3
+  },
+  "national_top_value": {
+   "value": 42.5,
+   "decimals": 1,
+   "block": 3
+  }
+ }
+}

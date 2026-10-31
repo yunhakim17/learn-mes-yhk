@@ -1,0 +1,16 @@
+# 원본 편집 파일 — 공개하지 않는다 (PDF만 올린다)
+*.pptx
+*.docx
+
+# 캡처 · 미리보기 이미지
+*.jpg
+*.jpeg
+preview*.png
+**/preview/
+
+# 제작 중 임시 파일
+forge/qa/
+env_check.txt
+__pycache__/
+.DS_Store
+Thumbs.db
